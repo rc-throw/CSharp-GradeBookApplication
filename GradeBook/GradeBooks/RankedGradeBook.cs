@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GradeBook.GradeBooks
+public namespace GradeBook.GradeBooks
 {
     class RankedGradeBook : BaseGradeBook
     {
