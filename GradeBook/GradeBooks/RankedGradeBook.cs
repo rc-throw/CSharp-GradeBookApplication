@@ -10,5 +10,17 @@ using System.Text;
         {
             Type = Enums.GradeBookType.Ranked;
         }
+
+        public override char GetLetterGrade(double averageGrade) 
+        {
+            if(Students.Count < 5)
+            {
+                return base.GetLetterGrade(averageGrade);
+            }
+            else
+            {
+                return 'F';
+            }
+        }
     }
 }
